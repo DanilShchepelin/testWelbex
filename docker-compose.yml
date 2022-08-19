@@ -1,0 +1,12 @@
+version: '3'
+services:
+  notes:
+    container_name: notes_docker
+    image: notes_image
+    ports:
+      - '3002:3002'
+  users:
+    container_name: users_docker
+    image: users_image
+    ports:
+      - '3001:3001'
